@@ -6,8 +6,6 @@ test("should first item name be foo", () => {
   const items = taverneCeleste.modifyItem();
   expect(items[0].name).toBe("bar");
 });
-import { expect, test } from 'vitest'
-import { Tavern, Item } from "../src/taverne_celeste";
 
 test("should decrease quality and expiration for normal item", () => {
   const taverneCeleste = new Tavern([new Item("normal item", 10, 20)]);
